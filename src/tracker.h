@@ -12,3 +12,4 @@ struct Subject {
 void loadSubjects(/*filler declaration*/); 
 void saveSubjects(/*filler declaration*/);
 void addSubject(/*filler declaration*/);
+void welcomeMessage(std::string name); //this will print the welcome message
