@@ -2,9 +2,11 @@
 
 #include <iostream>
 #include "tracker.h"
+#include <vector>
 
 int main() {
     welcomeMessage(); //this will print the welcome message
+    std::vector<Subject> subjects; //make a dynamic array to hold subjects using a container
 
-    loadSubjects(); //this will load the subjects from the file, using the function from tracker.cpp
+    loadSubjects(subjects); //this will load the subjects from the file, using the function from tracker.cpp
 }
