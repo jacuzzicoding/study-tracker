@@ -9,19 +9,22 @@ void loadSubjects(std:vector<Subject> &subjects) { //make a dynamic array to hol
     std::cout << "Loading subjects..." << std::endl; //loading message to show that the program is working
     std::ifstream inFile("subjects.txt");  // open file for reading
     //check if the file exists
-    if (!inFile) {
-        std::cout << "Error: No Such File Exists. Creating New File" << std::endl;
-        std::ofstream outFile("subjects.txt");
-        return;
+    if (!inFile) { //if the file does not exist
+        std::cout << "Error: No Such File Exists. Creating New File" << std::endl; //print the error message
+        std::ofstream outFile("subjects.txt"); //use ofstream to make a new blank text file
+        return; //return nothing if the file does not exist
     }
     //read the file if it exists
-    std::string subjectName;
+    else {
+        std::cout << "File found. Reading..." << std::endl; //print that the file was found
+    }
+    std::string subjectName; 
     int hours;
-    while (inFile >> subjectName >> hours) {
-        subjects.push_back({subjectName, hours});  // add each subject to the vector
+    while (inFile >> subjectName >> hours) { //while the file is being read
+        subjects.push_back({subjectName, hours});  // add each subject to the vector in the struct
     }
 
-    inFile.close();
+    inFile.close(); //close the file
 }
 
 void saveSubjects() {
@@ -33,4 +36,4 @@ void addSubject() {
 }
 void welcomeMessage() {
  std::cout << "Hello! Welcome to Sebastian and Brock's study tracker!" << std::endl; 
-}
+}  
