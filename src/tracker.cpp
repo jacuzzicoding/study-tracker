@@ -5,7 +5,7 @@
 //here we will put the actual function definitions for main.cpp to use (protypes in tracker.h)
 
 /*this will load the array of subjects from our subjects.txt file*/
-void loadSubjects(std:vector<Subject> &subjects) { //make a dynamic array to hold subjects using a container
+void loadSubjects(std::vector<Subject> &subjects) { //make a dynamic array to hold subjects using a container
     std::cout << "Loading subjects..." << std::endl; //loading message to show that the program is working
     std::ifstream inFile("subjects.txt");  // open file for reading
     //check if the file exists
