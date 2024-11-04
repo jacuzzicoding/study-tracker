@@ -31,8 +31,16 @@ void saveSubjects() {
     std::cout << "Saving subjects..." << std::endl;
 }
 
-void addSubject() {
-    std::cout << "Adding a subject..." << std::endl;
+Subject addSubject() {
+    // Need to check that newName is not an empty string
+    std::cout << "Enter the name of the subject: "; // Get the user to input a name.
+    std::string newName;
+    std::cin >> newName;
+
+    Subject newSubject; // Assign newName to the newSubject
+    newSubject.name = newName;
+
+    return newSubject;
 }
 void welcomeMessage() {
  std::cout << "Hello! Welcome to Sebastian and Brock's study tracker!" << std::endl; 
