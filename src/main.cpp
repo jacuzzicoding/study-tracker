@@ -10,4 +10,6 @@ int main() {
     std::vector<Subject> subjects; //make a dynamic array to hold subjects using a container
 
     loadSubjects(subjects); //this will load the subjects from the file, using the function from tracker.cpp
+
+    addSubject(subjects);
 }
