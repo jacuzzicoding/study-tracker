@@ -42,6 +42,6 @@ Subject addSubject() {
 
     return newSubject;
 }
-void welcomeMessage() {
- std::cout << "Hello! Welcome to Sebastian and Brock's study tracker!" << std::endl; 
+void welcomeMessage(std::string name) {
+ std::cout << "Hello " << name << "!Welcome to Sebastian and Brock's study tracker!" << std::endl; 
 }  

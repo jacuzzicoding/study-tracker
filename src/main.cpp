@@ -5,7 +5,8 @@
 #include <vector>
 
 int main() {
-    welcomeMessage(); //this will print the welcome message
+    std::string name;
+    welcomeMessage(name); //this will print the welcome message
     std::vector<Subject> subjects; //make a dynamic array to hold subjects using a container
 
     loadSubjects(subjects); //this will load the subjects from the file, using the function from tracker.cpp
