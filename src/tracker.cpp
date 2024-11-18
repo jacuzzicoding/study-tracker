@@ -2,16 +2,17 @@
 #include <iostream>
 #include <fstream> 
 
-//here we will put the actual function definitions for main.cpp to use (protypes in tracker.h)
+//here we will put the actual function definitions for main.cpp to use (prototypes in tracker.h)
 
-/*this will load the array of subjects from our subjects.txt file*/
+/*this will load the array of subjects from our subjects.txt file*/ 
+/* NEED TO SWITCH TO A CSV FILE */
 void loadSubjects(std::vector<Subject> &subjects) { //make a dynamic array to hold subjects using a container
     std::cout << "Loading subjects..." << std::endl; //loading message to show that the program is working
-    std::ifstream inFile("subjects.txt");  // open file for reading
+    std::ifstream inFile("subjects.csv");  // open file for reading
     //check if the file exists
     if (!inFile) { //if the file does not exist
         std::cout << "Error: No Such File Exists. Creating New File" << std::endl; //print the error message
-        std::ofstream outFile("subjects.txt"); //use ofstream to make a new blank text file
+        std::ofstream outFile("subjects.csv"); //use ofstream to make a new blank text file
         return; //return nothing if the file does not exist
     }
     //read the file if it exists
