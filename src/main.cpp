@@ -10,6 +10,7 @@ int main() {
     std::vector<Subject> subjects; //make a dynamic array to hold subjects using a container
 
     loadSubjects(subjects); //this will load the subjects from the file, using the function from tracker.cpp
+    //idea: ask user for name, store subjects file under name to check if it exists
 
     addSubject(subjects);
 }
