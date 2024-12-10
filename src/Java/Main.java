@@ -5,7 +5,7 @@
 public class Main {
     public static void main(String[] args) {
         // Main program logic (STILL IN C++ NEEDS UPDATED)
-    private String name;
+     String name = ""; //initialize the name variable, empty for now
     
     welcomeMessage(name); //this will print the welcome message
     std::vector<Subject> subjects; //make a dynamic array to hold subjects using a container
