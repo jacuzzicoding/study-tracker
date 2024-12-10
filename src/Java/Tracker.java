@@ -31,4 +31,7 @@ public class Tracker {
             System.out.println("An error occurred: " + e.getMessage());
         }
     }
+    public void welcomeMessage(String name) {
+        System.out.println("Hello " + name + "! Welcome to Sebastian and Brock's study tracker!");
+    }
 }
