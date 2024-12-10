@@ -23,7 +23,7 @@ public class Tracker {
                 while (scanner.hasNext()) { //while there is another line to read...
                     String subjectName = scanner.next(); //read the subject name
                     int hours = scanner.nextInt(); //read the hours
-                    subjects.add(new Subject(subjectName, hours)); //add the subject to the ArrayList...
+                    subjects.add(new Subject(subjectName, hours)); //add the subject to the ArrayList, creating a new Subject object with the name and hours
                 }
                 scanner.close(); //once the file is read, close the scanner
             }
