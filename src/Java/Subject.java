@@ -17,5 +17,16 @@ public class Subject { //public class Subject because it will be used in other c
     this.hoursStudied = hoursStudied;
 }
 
-// Getters and setters will go here
+    // Getters
+    public String getName() {
+        return name;
+    }
+
+    public ArrayList<String> getTasks() {
+        return tasks;
+    }
+
+    public int getHoursStudied() {
+        return hoursStudied;
+    }
 }
