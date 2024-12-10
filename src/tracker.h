@@ -8,6 +8,7 @@ struct Subject {
     int64_t timeInSeconds; //storing time as seconds, will convert to minutes for display. Using int64_t to avoid issues with larger numbers.
     vector<string> tasks; //we will use a vector to hold the tasks
     //int grade; //i don't know if we are going to use this yet, but i'm putting it here just in case
+
 };
 
 /*Function Prototypes*/

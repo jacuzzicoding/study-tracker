@@ -13,4 +13,20 @@ int main() {
     //idea: ask user for name, store subjects file under name to check if it exists
 
     addSubject(subjects);
+    addSubject(subjects);
+    addSubject(subjects);
+
+    addTask(subjects);
+    addTask(subjects);
+    addTask(subjects);
+    addTask(subjects);
+    addTask(subjects);
+
+    for (Subject subject : subjects) {
+        std::cout << subject.name << std::endl;
+        for (std::string task : subject.tasks) {
+            std::cout << task << " ";
+        }
+        std::cout << std::endl;
+    }
 }
