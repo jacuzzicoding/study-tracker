@@ -11,28 +11,19 @@ public class Main {
      // Create ArrayList to store subjects
      ArrayList<Subject> subjects = new ArrayList<>();
      
-    welcomeMessage(name); //this will print the welcome message
-    std::vector<Subject> subjects; //make a dynamic array to hold subjects using a container
+    // Welcome message - I'll need to add this method to Tracker.java
+    tracker.welcomeMessage(name); //print the welcome message
+    tracker.loadSubjects(subjects); //this will load the subjects from the file, using the function from Tracker.java
 
-    loadSubjects(subjects); //this will load the subjects from the file, using the function from tracker.cpp
-
-    addSubject(subjects);
-    addSubject(subjects);
-    addSubject(subjects);
-
-    addTask(subjects);
-    addTask(subjects);
-    addTask(subjects);
-    addTask(subjects);
-    addTask(subjects);
-
+    // For now, let's just print what we've loaded
+    // We'll add the other methods later
     for (Subject subject : subjects) {
-        std::cout << subject.name << std::endl;
-        for (std::string task : subject.tasks) {
-            std::cout << task << " ";
+        System.out.println(subject.getName());  // Assuming we have a getter
+        for (String task : subject.getTasks()) {  // Assuming we have a getter
+            System.out.print(task + " ");
         }
-        std::cout << std::endl;
-    }
-}
+        System.out.println();
+        
+        }
     }
 }
